@@ -1,0 +1,17 @@
+{
+  "name": "ws-server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js"
+  },
+  "author": "abuzerexe",
+  "dependencies": {
+    "nanoid": "^5.1.5",
+    "ws": "^8.18.2"
+  },
+  "engines": {
+    "node": "22.13.1"
+  }
+}
