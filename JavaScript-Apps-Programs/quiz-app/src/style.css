@@ -3,9 +3,11 @@
   padding: 0px;
   margin: 0px;
 }
+*, *::before, *::after {
+  box-sizing: border-box; /* applying globally */
+}
 body {
   font-size: 62.5%;
-  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 main {
@@ -26,7 +28,7 @@ main {
   align-items: center;
 }
 .box {
-  background-color: #42a5f55c;
+  background-color: rgba(66, 165, 245, 0.85); /* Slightly stronger contrast */
   width: 42%;
   height: 300px;
   padding: 15px;
@@ -58,9 +60,11 @@ main {
   left: 48%;
   transform: translateX(-50%);
   transition: all 0.3s;
+  cursor: pointer;
 }
 .btn:hover {
   background-color: rgb(41, 128, 185);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .head {
   font-size: 2rem;
@@ -93,6 +97,16 @@ main {
   position: absolute;
   margin-inline: auto;
   bottom: 2rem;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* for users navigating via keyboard */
+.options:focus + label {
+  outline: 2px dashed #fff;
+  outline-offset: 4px;
 }
 @media screen and (max-width: 576px) {
   .box {
