@@ -1,7 +1,7 @@
 console.log('Moazam');
 const question = [
   {
-    ques: 'Which of the following is the markup Language?',
+    ques: 'Which of the following is the Markup Language?',
     a: 'HTML',
     b: 'CSS',
     c: 'JavaScript',
@@ -10,7 +10,7 @@ const question = [
   },
   //  2 nd qs
   {
-    ques: 'In Which JavaScript was launched?',
+    ques: 'In which year was JavaScript launched?',
     a: '1996',
     b: '1995',
     c: '1998',
@@ -18,10 +18,10 @@ const question = [
     correct: 'b',
   },
   {
-    ques: 'What does CSS stands for?',
+    ques: 'What does CSS stand for?',
     a: 'Cascade Style Sheet',
     b: 'Cascading Style Sheet',
-    c: 'Hyper Text Markup Lanaguage',
+    c: 'Hyper Text Markup Language',
     d: 'Jason object Notation',
     correct: 'b',
   },
