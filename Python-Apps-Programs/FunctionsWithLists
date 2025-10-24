@@ -1,0 +1,59 @@
+#Union of two lists example code
+p = [2,5,5,8,8,8,9,30,45] # Enter the list 1
+q = [4,5,5,6,7,7,8,9,10] # Enter the list 2
+lp,lq = len(p),len(q) # Calculating the length of both p and q
+lr = lp + lq
+r = [0]*lr # creating r of zeros
+i = j = k = 0
+ 
+while(i<lp and j<lq): # This loop will continue when the values of i,j are less than lp and lq
+  if (p[i] < q[j]): # If the element of p is less than element of q
+     r[k]=p[i] # Assign the value of p to r
+     i += 1
+  else: #If the element of p is not less than element of q
+     if(p[i] > q[j]): # If the element of p is greater than element of q
+        r[k]=q[j] # Assign the value of q to r
+        j += 1
+     else: #If the element of p is equal to the element of q
+        r[k]=p[i]
+        i += 1
+        j += 1
+  k += 1
+while (i<lp):  # This loop will continue when the value of i is less than lp 
+  r[k]=p[i]
+  i+=1
+  k+=1
+while (j<lq):  # This loop will continue when the value of j is less than lq
+  r[k]=q[j]
+  j+=1
+  k+=1
+ 
+print (p)
+print (q)
+s = r[:k]
+print (s)
+
+#Intersection of two lists example code
+p = [2,5,5,8,8,8,9,30,45] # Enter list 1
+q = [4,5,5,6,7,7,8,8,9,10,45] # Enter list 2
+lp,lq = len(p),len(q) # Calculating the length of both p and q
+lr = lq if lq < lp else lp
+r = [0]*lr # Creating r of zeros
+i = j = k = 0
+ 
+while(i < lp and j < lq): # This loop will continue when the values of i,j are less than lp and lq
+  if (p[i] == q[j]): # If the element of p is equal to the element of q
+     r[k]=p[i] # Assigning value of p to k
+     i += 1
+     j += 1
+     k += 1
+  else: # If the element of p is not equal to the element of q
+     if(p[i] < q[j]): # If the element of p is less than the element of q
+        i += 1
+     else: # If the element of p is not less than the element of q
+        j += 1
+ 
+print (p)
+print (q)
+s = r[:k]
+print (s)
