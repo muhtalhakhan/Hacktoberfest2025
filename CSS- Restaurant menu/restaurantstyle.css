@@ -1,0 +1,128 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.navbar{
+    background-color: rgb(52, 52, 52);
+    justify-content: space-between;
+    display:flex;
+    align-items:center;
+    padding:10px 20px;
+}
+.navbar ul{
+    list-style-type: none;
+    overflow:hidden;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+    float:right;
+    margin:0px; 
+    margin-bottom:10px; 
+    margin-top:0px; 
+    font-size:20px;
+    margin-right:10px;
+}
+.navbar .tastebite{
+    color:white;
+    margin-left:30px;
+    font-size:40px;
+}
+.navbar a:hover{
+    background-color: grey;
+}
+
+header{
+    background-color: rgb(222, 221, 221);
+    text-align:center;
+    height:150px;
+    padding:40px;
+}
+header h3{
+    font-size:30px;
+}
+header h4{
+    font-size:20px;
+    margin-top: 10px;
+}
+
+main{
+    margin:30px;
+}
+h3{
+    font-size:25px;
+}
+#food{
+    font-weight:bold;
+    margin-top:5px;
+    font-size:20px;
+}
+
+#name{
+    width:100vh;
+    height:4vh;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:3px;
+    border-width: 3px;
+    border-color: rgb(65, 64, 64);
+    padding:10px;
+}
+
+#date{
+    width:100vh;
+    height:4vh;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:3px;
+    border-width: 3px;
+    border-color: rgb(65, 64, 64);
+    padding:10px;  
+}
+
+#time{
+    width:100vh;
+    height: 4vh;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:3px;
+    border-width: 3px;
+    border-color: rgb(65, 64, 64);
+    padding:10px;
+}
+
+#guests{
+    width:100vh;
+    height:4vh;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:3px;
+    border-width: 3px;
+    border-color: rgb(65, 64, 64);
+    padding:10px;
+}
+
+button{
+    font-size:15px;
+    padding:5px;
+}
+button:hover{
+    background-color:rgb(209, 205, 205);
+}
+
+p{
+    font-size:20px;
+    font-style:italic
+}
+
+footer{
+    background-color: rgb(77, 76, 76);
+    text-align:center;
+    color:white;
+    padding:5px;
+}
