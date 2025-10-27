@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Counter</title>
+</head>
+
+<body>
+    <h1>Counter: <span id="count">0</span></h1>
+    <button onclick="decrease()">-</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="increase()">+</button>
+
+    <script>
+        let count = 0;
+        const display = document.getElementById('count');
+
+        function increase() {
+            count++;
+            display.textContent = count;
+        }
+
+        function decrease() {
+            count--;
+            display.textContent = count;
+        }
+
+        function reset() {
+            count = 0;
+            display.textContent = count;
+        }
+    </script>
+</body>
+
+</html>
